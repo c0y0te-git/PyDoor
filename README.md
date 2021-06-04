@@ -10,5 +10,3 @@ Linux host machine running AntiochCmdServer, and target virtual machine running 
 
 
 **!!! FOR EDUCATIONAL PURPOSES ONLY !!!**
-
-Created by: Trevor Spaniola (c0y0te)
