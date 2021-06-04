@@ -1,8 +1,14 @@
-# trojan_c0y0te
+# Antioch_Trojan
 
 **BEFORE USING:**
 
-Make sure you change the IP address in both the server and the backdoor file, in order to match whatever __local host__ (LHOST) IP you wish for the backdoor to report back to.
+Set the __local host__ (LHOST) IP address and the __listening port__ (LPORT) in both AntiochBackdoor.py and AntiochCmdServer.py file.
+
+
+**Environment Setup:**
+Linux host machine running AntiochCmdServer, and target virtual machine running AntiochBackdoor.
 
 
 **!!! FOR EDUCATIONAL PURPOSES ONLY !!!**
+
+Created by: Trevor Spaniola (c0y0te)
