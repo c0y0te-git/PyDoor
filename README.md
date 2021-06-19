@@ -1,4 +1,4 @@
-# c0y0te's Reverse Python Shell
+# c0y0te's PythonDoor
 
 
 **BEFORE USING:**
@@ -24,7 +24,7 @@ On the Windows machine enter the commandline, go to desired directory and run:
 
 
 **ENVIRONMENT SETUP:**
-Linux host machine running AntiochCmdServer, and target virtual machine running pyBackdoor-c0y1.py.
+Linux host machine running pyListener-c0y1.py, and target virtual machine running pyBackdoor-c0y1.py.
 
 
 
